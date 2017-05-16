@@ -1,0 +1,15 @@
+
+Sample files and codecs:
+
+See codecs.txt for a list of the available codec files and IDs.
+
+
+Node shape and colors:
+
+Amplifier:	triangle
+Audio input:	red ellipse
+Audio output:	blue ellipse
+Audio selector:	parallelogram
+Audio mixer:	hexagon
+Pin complex:	rectangle
+

@@ -1,0 +1,4 @@
+- (Probably a alsa bug, not a bug in the script)
+  Definition of Input/Output amplifiers for Pin Complexes is ambiguous.
+  /proc/asound/card*/codec* shows as if the Pin Complex had multiple input
+  amplifiers, but this doesn't seem to be true.
