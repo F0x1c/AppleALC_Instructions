@@ -1,0 +1,153 @@
+Codec: Realtek ALC260
+Address: 0
+Vendor Id: 0x10ec0260
+Subsystem Id: 0x0
+Revision Id: 0x100300
+Default PCM: rates 0x560, bits 0x0e, types 0x1
+Default Amp-In caps: N/A
+Default Amp-Out caps: N/A
+Node 0x02 [Audio Output] wcaps 0x11: Stereo
+   PCM: rates 0x560, bits 0x0e, types 0x1
+Node 0x03 [Audio Output] wcaps 0x211: Stereo Digital
+   PCM: rates 0x560, bits 0x1e, types 0x1
+Node 0x04 [Audio Input] wcaps 0x10011b: Stereo Amp-In
+   Amp-In caps: ofs=0x00, nsteps=0x23, stepsize=0x03, mute=1
+   Amp-In vals:  [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00]
+   PCM: rates 0x160, bits 0x06, types 0x1
+   Connection: 7
+      0x12 0x13 0x14* 0x15 0x16 0x0f 0x10
+Node 0x05 [Audio Input] wcaps 0x10011b: Stereo Amp-In
+   Amp-In caps: ofs=0x00, nsteps=0x23, stepsize=0x03, mute=1
+   Amp-In vals:  [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00] [0x00 0x00]
+   PCM: rates 0x160, bits 0x06, types 0x1
+   Connection: 8
+      0x12 0x13 0x14* 0x15 0x16 0x07 0x0f 0x10
+Node 0x06 [Audio Input] wcaps 0x100391: Stereo Digital
+   PCM: rates 0x160, bits 0x1e, types 0x1
+   Connection: 1
+      0x19
+Node 0x07 [Audio Mixer] wcaps 0x20010b: Stereo Amp-In
+   Amp-In caps: ofs=0x23, nsteps=0x41, stepsize=0x03, mute=1
+   Amp-In vals:  [0x00 0x00] [0xa3 0xa3] [0x00 0x00] [0xa3 0xa3] [0x00 0x00] [0x30 0x30] [0xa3 0xa3] [0xa3 0xa3]
+   Connection: 8
+      0x12 0x13 0x14 0x15 0x16 0x17 0x0f 0x10
+Node 0x08 [Audio Mixer] wcaps 0x20010f: Stereo Amp-In Amp-Out
+   Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-In vals:  [0x00 0x00] [0x00 0x00]
+   Amp-Out caps: ofs=0x40, nsteps=0x40, stepsize=0x03, mute=0
+   Amp-Out vals:  [0x2f 0x2f]
+   Connection: 2
+      0x02 0x07
+Node 0x09 [Audio Mixer] wcaps 0x20010f: Stereo Amp-In Amp-Out
+   Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-In vals:  [0x00 0x00] [0x00 0x00]
+   Amp-Out caps: ofs=0x40, nsteps=0x40, stepsize=0x03, mute=0
+   Amp-Out vals:  [0x35 0x35]
+   Connection: 2
+      0x02 0x07
+Node 0x0a [Audio Mixer] wcaps 0x20010e: Mono Amp-In Amp-Out
+   Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-In vals:  [0x80] [0x80]
+   Amp-Out caps: ofs=0x23, nsteps=0x41, stepsize=0x03, mute=0
+   Amp-Out vals:  [0x00]
+   Connection: 2
+      0x02 0x07
+Node 0x0b [Audio Selector] wcaps 0x300101: Stereo
+   Connection: 2
+      0x08* 0x09
+Node 0x0c [Audio Selector] wcaps 0x300101: Stereo
+   Connection: 2
+      0x08* 0x09
+Node 0x0d [Audio Selector] wcaps 0x300101: Stereo
+   Connection: 2
+      0x08* 0x09
+Node 0x0e [Audio Selector] wcaps 0x300101: Stereo
+   Connection: 2
+      0x08* 0x09
+Node 0x0f [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+   Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-Out vals:  [0x00 0x00]
+   Pincap 0x081003f: IN OUT HP
+   Pin Default 0xb7111111: [Fixed] Speaker at Oth Mobile-In
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x40: OUT
+   Connection: 1
+      0x08
+Node 0x10 [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+   Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-Out vals:  [0x00 0x00]
+   Pincap 0x081003f: IN OUT HP
+   Pin Default 0x37014112: [Jack] Line Out at Oth Mobile-In
+     Conn = 1/8, Color = Green
+   Pin-ctls: 0xc0: OUT HP
+   Connection: 1
+      0x09
+Node 0x11 [Pin Complex] wcaps 0x40010c: Mono Amp-Out
+   Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-Out vals:  [0x00]
+   Pincap 0x0810: OUT
+   Pin Default 0x41111131: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x40: OUT
+   Connection: 1
+      0x0a
+Node 0x12 [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+   Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-Out vals:  [0x80 0x80]
+   Pincap 0x08133f: IN OUT HP
+   Pin Default 0x37a15921: [Jack] Mic at Oth Mobile-In
+     Conn = 1/8, Color = Red
+   Pin-ctls: 0x24: IN
+   Connection: 1
+      0x0b
+Node 0x13 [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+   Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-Out vals:  [0x80 0x80]
+   Pincap 0x08133f: IN OUT HP
+   Pin Default 0x41111132: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x24: IN
+   Connection: 1
+      0x0c
+Node 0x14 [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+   Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-Out vals:  [0x80 0x80]
+   Pincap 0x08133f: IN OUT HP
+   Pin Default 0x41111133: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x20: IN
+   Connection: 1
+      0x0d
+Node 0x15 [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+   Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+   Amp-Out vals:  [0x00 0x00]
+   Pincap 0x08133f: IN OUT HP
+   Pin Default 0x41111134: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x40: OUT
+   Connection: 1
+      0x0e
+Node 0x16 [Pin Complex] wcaps 0x400001: Stereo
+   Pincap 0x0820: IN
+   Pin Default 0x41111135: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x00:
+Node 0x17 [Pin Complex] wcaps 0x400000: Mono
+   Pincap 0x0820: IN
+   Pin Default 0x41111122: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x00:
+Node 0x18 [Pin Complex] wcaps 0x400380: Mono Digital
+   Pincap 0x0814: OUT
+   Pin Default 0x41111136: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x00:
+   Connection: 1
+      0x03
+Node 0x19 [Pin Complex] wcaps 0x400280: Mono Digital
+   Pincap 0x0824: IN
+   Pin Default 0x41111137: [N/A] Speaker at Ext Rear
+     Conn = 1/8, Color = Black
+   Pin-ctls: 0x00:
+Node 0x1a [Vendor Defined Widget] wcaps 0xf00040: Mono
+Node 0x1b [Volume Knob Widget] wcaps 0x600080: Mono

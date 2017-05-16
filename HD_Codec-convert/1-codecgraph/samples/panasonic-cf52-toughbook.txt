@@ -1,0 +1,254 @@
+Codec: Analog Devices AD1883
+Address: 0
+Vendor Id: 0x11d41883
+Subsystem Id: 0x10f70000
+Revision Id: 0x100400
+No Modem Function Group found
+Default PCM:
+    rates [0x7ff]: 8000 11025 16000 22050 32000 44100 48000 88200 96000 176400 192000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+Default Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+Default Amp-Out caps: ofs=0x27, nsteps=0x27, stepsize=0x05, mute=0
+GPIO: io=3, o=0, i=0, unsolicited=1, wake=0
+  IO[0]: enable=0, dir=0, wake=0, sticky=0, data=1
+  IO[1]: enable=0, dir=0, wake=0, sticky=0, data=0
+  IO[2]: enable=0, dir=0, wake=0, sticky=0, data=0
+Node 0x02 [Audio Output] wcaps 0x30211: Stereo Digital
+  Converter: stream=5, channel=0
+  Digital:
+  Digital category: 0x0
+  PCM:
+    rates [0x7e0]: 44100 48000 88200 96000 176400 192000
+    bits [0xe]: 16 20 24
+    formats [0x5]: PCM AC3
+  Delay: 3 samples
+Node 0x03 [Audio Output] wcaps 0x405: Stereo Amp-Out
+  Amp-Out caps: ofs=0x27, nsteps=0x27, stepsize=0x05, mute=0
+  Amp-Out vals:  [0x27 0x27]
+  Converter: stream=5, channel=0
+  Power: setting=D0, actual=D0
+Node 0x04 [Audio Output] wcaps 0x405: Stereo Amp-Out
+  Amp-Out caps: ofs=0x27, nsteps=0x27, stepsize=0x05, mute=0
+  Amp-Out vals:  [0x27 0x27]
+  Converter: stream=0, channel=0
+  Power: setting=D0, actual=D0
+Node 0x05 [Vendor Defined Widget] wcaps 0xf00000: Mono
+Node 0x06 [Vendor Defined Widget] wcaps 0xf00000: Mono
+Node 0x07 [Audio Mixer] wcaps 0x200103: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-In vals:  [0x80 0x80] [0x00 0x00]
+  Connection: 2
+     0x22 0x21
+Node 0x08 [Audio Input] wcaps 0x100501: Stereo
+  Converter: stream=0, channel=0
+  SDI-Select: 0
+  Power: setting=D0, actual=D0
+  Connection: 1
+     0x0c
+Node 0x09 [Audio Input] wcaps 0x100501: Stereo
+  Converter: stream=0, channel=0
+  SDI-Select: 0
+  Power: setting=D0, actual=D0
+  Connection: 1
+     0x0d
+Node 0x0a [Audio Mixer] wcaps 0x200103: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-In vals:  [0x80 0x80] [0x00 0x00]
+  Connection: 2
+     0x04 0x21
+Node 0x0b [Audio Mixer] wcaps 0x200103: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-In vals:  [0x80 0x80] [0x80 0x80]
+  Connection: 2
+     0x0f 0x21
+Node 0x0c [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x27, nsteps=0x36, stepsize=0x05, mute=1
+  Amp-Out vals:  [0x1d 0x1d]
+  Connection: 6
+     0x14 0x15 0x16 0x20 0x25* 0x17
+Node 0x0d [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x27, nsteps=0x36, stepsize=0x05, mute=1
+  Amp-Out vals:  [0x18 0x98]
+  Connection: 6
+     0x14* 0x15 0x16 0x20 0x25 0x17
+Node 0x0e [Audio Selector] wcaps 0x300101: Stereo
+  Connection: 2
+     0x03* 0x04
+Node 0x0f [Audio Selector] wcaps 0x300101: Stereo
+  Connection: 2
+     0x03* 0x04
+Node 0x10 [Beep Generator Widget] wcaps 0x70000c: Mono Amp-Out
+  Amp-Out caps: ofs=0x0f, nsteps=0x0f, stepsize=0x0b, mute=1
+  Amp-Out vals:  [0x00]
+Node 0x11 [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-Out vals:  [0x00 0x00]
+  Pincap 0x0000001f: OUT HP Detect Trigger ImpSense
+  Pin Default 0x0221101f: [Jack] HP Out at Ext Front
+    Conn = 1/8, Color = Black
+    DefAssociation = 0x1, Sequence = 0xf
+  Pin-ctls: 0xc0: OUT HP
+  Unsolicited: tag=00, enabled=0
+  Connection: 1
+     0x07
+Node 0x12 [Pin Complex] wcaps 0x40058d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-Out vals:  [0x00 0x00]
+  Pincap 0x0001001f: OUT HP EAPD Detect Trigger ImpSense
+  EAPD 0x0:
+  Pin Default 0x90170110: [Fixed] Speaker at Int N/A
+    Conn = Analog, Color = Unknown
+    DefAssociation = 0x1, Sequence = 0x0
+    Misc = NO_PRESENCE
+  Pin-ctls: 0xc0: OUT HP
+  Unsolicited: tag=00, enabled=0
+  Power: setting=D0, actual=D0
+  Connection: 1
+     0x0a
+Node 0x13 [Pin Complex] wcaps 0x40050c: Mono Amp-Out
+  Amp-Out caps: ofs=0x1f, nsteps=0x1f, stepsize=0x05, mute=1
+  Amp-Out vals:  [0x00]
+  Pincap 0x00010010: OUT EAPD
+  EAPD 0x0:
+  Pin Default 0x400000f0: [N/A] Line Out at Ext N/A
+    Conn = Unknown, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x40: OUT
+  Power: setting=D0, actual=D0
+  Connection: 1
+     0x1f
+Node 0x14 [Pin Complex] wcaps 0x40008b: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x03, stepsize=0x27, mute=0
+  Amp-In vals:  [0x02 0x02]
+  Pincap 0x00003727: IN Detect Trigger ImpSense
+    Vref caps: HIZ 50 GRD 80 100
+  Pin Default 0x02a11020: [Jack] Mic at Ext Front
+    Conn = 1/8, Color = Black
+    DefAssociation = 0x2, Sequence = 0x0
+  Pin-ctls: 0x24: IN VREF_80
+  Unsolicited: tag=00, enabled=0
+Node 0x15 [Pin Complex] wcaps 0x40008b: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x03, stepsize=0x27, mute=0
+  Amp-In vals:  [0x00 0x00]
+  Pincap 0x00003727: IN Detect Trigger ImpSense
+    Vref caps: HIZ 50 GRD 80 100
+  Pin Default 0x40f700f0: [N/A] Other at Ext N/A
+    Conn = Analog, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x20: IN VREF_HIZ
+  Unsolicited: tag=00, enabled=0
+Node 0x16 [Pin Complex] wcaps 0x40058d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-Out vals:  [0x80 0x80]
+  Pincap 0x00010037: IN OUT EAPD Detect Trigger ImpSense
+  EAPD 0x0:
+  Pin Default 0x40f700f0: [N/A] Other at Ext N/A
+    Conn = Analog, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x20: IN
+  Unsolicited: tag=00, enabled=0
+  Power: setting=D0, actual=D0
+  Connection: 1
+     0x0b
+Node 0x17 [Pin Complex] wcaps 0x40020b: Stereo Digital Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x03, stepsize=0x17, mute=0
+  Amp-In vals:  [0x00 0x00]
+  Pincap 0x00000020: IN
+  Pin Default 0x40c600f0: [N/A] SPDIF In at Ext N/A
+    Conn = Digital, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x24: IN
+Node 0x18 [Vendor Defined Widget] wcaps 0xf00100: Mono
+  Connection: 1
+     0x06
+Node 0x19 [Power Widget] wcaps 0x500500: Mono
+  Power: setting=D0, actual=D0
+  Connection: 2
+     0x20* 0x21
+Node 0x1a [Pin Complex] wcaps 0x400000: Mono
+  Pincap 0x00000020: IN
+  Pin Default 0x90f701f0: [Fixed] Other at Int N/A
+    Conn = Analog, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+    Misc = NO_PRESENCE
+  Pin-ctls: 0x20: IN
+Node 0x1b [Pin Complex] wcaps 0x40038d: Stereo Digital Amp-Out
+  Amp-Out caps: ofs=0x27, nsteps=0x27, stepsize=0x05, mute=1
+  Amp-Out vals:  [0x00 0x00]
+  Pincap 0x00000014: OUT Detect
+  Pin Default 0x404500f0: [N/A] SPDIF Out at Ext N/A
+    Conn = Optical, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x00:
+  Unsolicited: tag=00, enabled=0
+  Connection: 1
+     0x02
+Node 0x1c [Pin Complex] wcaps 0x40018d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-Out vals:  [0x80 0x80]
+  Pincap 0x00003737: IN OUT Detect Trigger ImpSense
+    Vref caps: HIZ 50 GRD 80 100
+  Pin Default 0x40f700f0: [N/A] Other at Ext N/A
+    Conn = Analog, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x24: IN VREF_80
+  Unsolicited: tag=00, enabled=0
+  Connection: 1
+     0x24
+Node 0x1d [Vendor Defined Widget] wcaps 0xf00100: Mono
+  Connection: 25
+     0x07* 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f 0x11 0x12 0x13 0x14 0x15 0x16 0x19 0x1a 0x1c 0x1e 0x1f 0x20 0x21 0x22 0x23 0x24 0x25 0x26
+Node 0x1e [Audio Mixer] wcaps 0x200103: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-In vals:  [0x80 0x80] [0x00 0x00]
+  Connection: 2
+     0x0e 0x21
+Node 0x1f [Audio Mixer] wcaps 0x200100: Mono
+  Connection: 1
+     0x1e
+Node 0x20 [Audio Mixer] wcaps 0x20010b: Stereo Amp-In
+  Amp-In caps: ofs=0x17, nsteps=0x1f, stepsize=0x05, mute=1
+  Amp-In vals:  [0x1f 0x1f] [0x1f 0x1f] [0x19 0x19] [0x80 0x80] [0x1a 0x1a] [0x0b 0x0b] [0x97 0x97]
+  Connection: 7
+     0x14 0x15 0x16 0x1a 0x25 0x03 0x04
+Node 0x21 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x1f, nsteps=0x1f, stepsize=0x05, mute=1
+  Amp-Out vals:  [0x16 0x16]
+  Connection: 1
+     0x20
+Node 0x22 [Audio Selector] wcaps 0x300101: Stereo
+  Connection: 2
+     0x03* 0x04
+Node 0x23 [Audio Selector] wcaps 0x300101: Stereo
+  Connection: 2
+     0x03* 0x04
+Node 0x24 [Audio Mixer] wcaps 0x200103: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-In vals:  [0x80 0x80] [0x80 0x80]
+  Connection: 2
+     0x23 0x21
+Node 0x25 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x03, stepsize=0x27, mute=0
+  Amp-Out vals:  [0x02 0x02]
+  Connection: 1
+     0x1c
+Node 0x26 [Vendor Defined Widget] wcaps 0xf00100: Mono
+  Connection: 3
+     0x14* 0x15 0x1c
+Node 0x27 [Vendor Defined Widget] wcaps 0xf00301: Stereo Digital
+  Connection: 2
+     0x08* 0x09
+Node 0x28 [Vendor Defined Widget] wcaps 0xf0030d: Stereo Digital Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-Out vals:  [0x80 0x80]
+  Connection: 2
+     0x08* 0x09
+Node 0x29 [Vendor Defined Widget] wcaps 0xf0030d: Stereo Digital Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x00, stepsize=0x00, mute=1
+  Amp-Out vals:  [0x80 0x80]
+  Connection: 2
+     0x08* 0x09
+Node 0x2a [Vendor Defined Widget] wcaps 0xf00301: Stereo Digital
+  Connection: 2
+     0x01* 0x27

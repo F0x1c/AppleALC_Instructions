@@ -1,0 +1,117 @@
+Codec: SigmaTel ID 7661
+Address: 0
+Vendor Id: 0x83847661
+Subsystem Id: 0x104d0700
+Revision Id: 0x104201
+Default PCM: rates 0x7e0, bits 0x0e, types 0x1
+Default Amp-In caps: ofs=0x00, nsteps=0x0f, stepsize=0x05, mute=1
+Default Amp-Out caps: ofs=0x7f, nsteps=0x7f, stepsize=0x02, mute=1
+Node 0x02 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals: [0xff 0xff]
+  Power: 0x33
+Node 0x03 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals: [0xff 0xff]
+  Power: 0x33
+Node 0x04 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals: [0xff 0xff]
+  Power: 0x33
+Node 0x05 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals: [0xff 0xff]
+  Power: 0x33
+Node 0x06 [Audio Input] wcaps 0x1d0541: Stereo
+  Power: 0x33
+  Connection: 1
+     0x07
+Node 0x07 [Audio Selector] wcaps 0x300903: Stereo Amp-In
+  Amp-In caps: N/A
+  Amp-In vals: [0x80 0x80]
+  Connection: 1
+     0x0e
+Node 0x08 [Audio Input] wcaps 0x1d0541: Stereo
+  Power: 0x33
+  Connection: 1
+     0x09
+Node 0x09 [Audio Selector] wcaps 0x300903: Stereo Amp-In
+  Amp-In caps: N/A
+  Amp-In vals: [0x80 0x80]
+  Connection: 1
+     0x15
+Node 0x0a [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x08173c: IN OUT HP
+  Pin Default 0x012110f0: [Jack] HP Out at Ext Rear
+    Conn = 1/8, Color = Black
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x02
+Node 0x0b [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x0814: OUT
+  Pin Default 0x40f000fb: [N/A] Other at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x04
+Node 0x0c [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x0814: OUT
+  Pin Default 0x40f000fc: [N/A] Other at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x03
+Node 0x0d [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x08173c: IN OUT HP
+  Pin Default 0x41a15020: [N/A] Mic at Ext Rear
+    Conn = 1/8, Color = Red
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x02
+Node 0x0e [Pin Complex] wcaps 0x400081: Stereo
+  Pincap 0x0824: IN
+  Pin Default 0x90370060: [Fixed] CD at Int N/A
+    Conn = Analog, Color = Unknown
+  Pin-ctls: 0x00:
+Node 0x0f [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x0814: OUT
+  Pin Default 0x90170010: [Fixed] Speaker at Int N/A
+    Conn = Analog, Color = Unknown
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x05
+Node 0x10 [Audio Output] wcaps 0x40211: Stereo Digital
+  PCM: rates 0x3e0, bits 0x0e, types 0x5
+Node 0x11 [Pin Complex] wcaps 0x400301: Stereo Digital
+  Pincap 0x0810: OUT
+  Pin Default 0x40f000fd: [N/A] Other at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x00:
+  Connection: 2
+     0x10* 0x09
+Node 0x12 [Audio Input] wcaps 0x140311: Stereo Digital
+  PCM: rates 0x160, bits 0x0e, types 0x5
+  Connection: 1
+     0x13
+Node 0x13 [Pin Complex] wcaps 0x440381: Stereo Digital
+  Pincap 0x0834: IN OUT
+  Pin Default 0x40f000fe: [N/A] Other at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x18
+Node 0x14 [Pin Complex] wcaps 0x400001: Stereo
+  Pincap 0x0820: IN
+  Pin Default 0x90a7002e: [Fixed] Mic at Int N/A
+    Conn = Analog, Color = Unknown
+  Pin-ctls: 0x00:
+Node 0x15 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x04, stepsize=0x27, mute=1
+  Amp-Out vals: [0x00 0x00]
+  Connection: 4
+     0x0a* 0x0d 0x14 0x02
+Node 0x16 [Beep Generator Widget] wcaps 0x70000c: Mono Amp-Out
+  Amp-Out caps: ofs=0x03, nsteps=0x03, stepsize=0x17, mute=0
+  Amp-Out vals: [0x00]
+Node 0x17 [Volume Knob Widget] wcaps 0x600000: Mono
+Node 0x18 [Audio Output] wcaps 0x40201: Stereo Digital

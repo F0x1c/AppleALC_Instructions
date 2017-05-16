@@ -1,0 +1,169 @@
+Codec: VIA VIA VT1708
+Address: 0
+Vendor Id: 0x11061708
+Subsystem Id: 0x15092f07
+Revision Id: 0x100700
+Default PCM:
+    rates [0x0]:
+    bits [0x0]:
+    formats [0x0]:
+Default Amp-In caps: N/A
+Default Amp-Out caps: N/A
+Node 0x10 [Audio Output] wcaps 0x411: Stereo
+  PCM:
+    rates [0x7e0]: 44100 48000 88200 96000 176400 192000
+    bits [0xa]: 16 24
+    formats [0x1]: PCM
+  Power: 0x0
+Node 0x11 [Audio Output] wcaps 0x411: Stereo
+  PCM:
+    rates [0x7e0]: 44100 48000 88200 96000 176400 192000
+    bits [0xa]: 16 24
+    formats [0x1]: PCM
+  Power: 0x0
+Node 0x12 [Audio Output] wcaps 0x411: Stereo
+  PCM:
+    rates [0x7e0]: 44100 48000 88200 96000 176400 192000
+    bits [0xa]: 16 24
+    formats [0x1]: PCM
+  Power: 0x0
+Node 0x13 [Audio Output] wcaps 0x411: Stereo
+  PCM:
+    rates [0x7e0]: 44100 48000 88200 96000 176400 192000
+    bits [0xa]: 16 24
+    formats [0x1]: PCM
+  Power: 0x0
+Node 0x14 [Audio Output] wcaps 0x211: Stereo Digital
+  PCM:
+    rates [0x7e0]: 44100 48000 88200 96000 176400 192000
+    bits [0xa]: 16 24
+    formats [0x5]: PCM AC3
+Node 0x15 [Audio Input] wcaps 0x10051b: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x14, stepsize=0x06, mute=1
+  Amp-In vals:  [0x00 0x00]
+  PCM:
+    rates [0x440]: 48000 192000
+    bits [0xa]: 16 24
+    formats [0x1]: PCM
+  Power: 0x0
+  Connection: 1
+     0x18
+Node 0x16 [Audio Input] wcaps 0x100311: Stereo Digital
+  PCM:
+    rates [0x1f0]: 32000 44100 48000 88200 96000
+    bits [0xa]: 16 24
+    formats [0x5]: PCM AC3
+  Connection: 1
+     0x26
+Node 0x17 [Audio Mixer] wcaps 0x20010b: Stereo Amp-In
+  Amp-In caps: ofs=0x17, nsteps=0x1f, stepsize=0x06, mute=1
+  Amp-In vals:  [0x1f 0x1f] [0x00 0x00] [0x80 0x80] [0x00 0x00] [0x10 0x10] [0x80 0x80]
+  Connection: 6
+     0x10 0x24 0x1d 0x1e 0x21 0x13
+Node 0x18 [Audio Selector] wcaps 0x300101: Stereo
+  Connection: 5
+     0x17* 0x24 0x1d 0x1e 0x21
+Node 0x19 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x1b, nsteps=0x1b, stepsize=0x06, mute=1
+  Amp-Out vals:  [0x00 0x00]
+  Connection: 1
+     0x11
+Node 0x1a [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x1b, nsteps=0x1b, stepsize=0x06, mute=1
+  Amp-Out vals:  [0x00 0x00]
+  Connection: 1
+     0x12
+Node 0x1b [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x1b, nsteps=0x1b, stepsize=0x06, mute=1
+  Amp-Out vals:  [0x00 0x00]
+  Connection: 1
+     0x13
+Node 0x1c [Pin Complex] wcaps 0x40010d: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x00 0x00]
+  Pincap 0x081c: OUT HP Detect
+  Pin Default 0x410110f2: [N/A] Line Out at Ext Rear
+    Conn = 1/8, Color = Black
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x19
+Node 0x1d [Pin Complex] wcaps 0x400101: Stereo
+  Pincap 0x08334: IN OUT Detect
+  Pin Default 0x01a190f0: [Jack] Mic at Ext Rear
+    Conn = 1/8, Color = Pink
+  Pin-ctls: 0x21: IN
+  Connection: 1
+     0x1a
+Node 0x1e [Pin Complex] wcaps 0x400101: Stereo
+  Pincap 0x08334: IN OUT Detect
+  Pin Default 0x428130fe: [N/A] Line In at Ext Front
+    Conn = 1/8, Color = Blue
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x19
+Node 0x1f [Pin Complex] wcaps 0x40010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x1b, nsteps=0x1b, stepsize=0x06, mute=1
+  Amp-Out vals:  [0x08 0x08]
+  Pincap 0x081c: OUT HP Detect
+  Pin Default 0x901141f0: [Fixed] Speaker at Int N/A
+    Conn = 1/8, Color = Green
+  Pin-ctls: 0x40: OUT
+  Connection: 1
+     0x17
+Node 0x20 [Pin Complex] wcaps 0x40010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x1b, nsteps=0x1b, stepsize=0x06, mute=1
+  Amp-Out vals:  [0x13 0x13]
+  Pincap 0x081c: OUT HP Detect
+  Pin Default 0x422140f0: [N/A] HP Out at Ext Front
+    Conn = 1/8, Color = Green
+  Pin-ctls: 0x40: OUT
+  Connection: 1
+     0x17
+Node 0x21 [Pin Complex] wcaps 0x400101: Stereo
+  Pincap 0x08334: IN OUT Detect
+  Pin Default 0x90a191f0: [Fixed] Mic at Int N/A
+    Conn = 1/8, Color = Pink
+  Pin-ctls: 0x21: IN
+  Connection: 1
+     0x1b
+Node 0x22 [Pin Complex] wcaps 0x400101: Stereo
+  Pincap 0x0814: OUT Detect
+  Pin Default 0x410160f1: [N/A] Line Out at Ext Rear
+    Conn = 1/8, Color = Orange
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x1a
+Node 0x23 [Pin Complex] wcaps 0x400101: Stereo
+  Pincap 0x0814: OUT Detect
+  Pin Default 0x410120f4: [N/A] Line Out at Ext Rear
+    Conn = 1/8, Color = Grey
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x1b
+Node 0x24 [Pin Complex] wcaps 0x400001: Stereo
+  Pincap 0x0820: IN
+  Pin Default 0x593300f7: [N/A] CD at Int ATAPI
+    Conn = ATAPI, Color = Unknown
+  Pin-ctls: 0x00:
+Node 0x25 [Pin Complex] wcaps 0x400301: Stereo Digital
+  Pincap 0x0810: OUT
+  Pin Default 0x474410f0: [N/A] SPDIF Out at Ext Rear Panel
+    Conn = RCA, Color = Black
+  Pin-ctls: 0x40: OUT
+  Connection: 1
+     0x14
+Node 0x26 [Pin Complex] wcaps 0x400201: Stereo Digital
+  Pincap 0x0810030: IN OUT EAPD
+  Pin Default 0x71c420f0: [N/A] SPDIF In at Oth Rear
+    Conn = RCA, Color = Grey
+  Pin-ctls: 0x40: OUT
+Node 0x27 [Audio Input] wcaps 0x10051b: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x14, stepsize=0x06, mute=1
+  Amp-In vals:  [0x00 0x00]
+  PCM:
+    rates [0x440]: 48000 192000
+    bits [0xa]: 16 24
+    formats [0x1]: PCM
+  Power: 0x0
+  Connection: 1
+     0x21

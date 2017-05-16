@@ -1,0 +1,130 @@
+Codec: SigmaTel STAC9221 A1
+Address: 0
+Vendor Id: 0x83847680
+Subsystem Id: 0x100
+Revision Id: 0x103401
+Default PCM: rates 0x7e0, bits 0x0e, types 0x1
+Default Amp-In caps: ofs=0x00, nsteps=0x0e, stepsize=0x05, mute=1
+Default Amp-Out caps: ofs=0x7f, nsteps=0x7f, stepsize=0x02, mute=1
+Node 0x02 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x7f 0x7f]
+  Power: 0x0
+Node 0x03 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0xff 0xff]
+  Power: 0x0
+Node 0x04 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x7f 0x7f]
+  Power: 0x0
+Node 0x05 [Audio Output] wcaps 0xd0c05: Stereo Amp-Out
+  Amp-Out caps: N/A
+  Amp-Out vals:  [0x7f 0x7f]
+  Power: 0x0
+Node 0x06 [Audio Input] wcaps 0x1d0541: Stereo
+  Power: 0x0
+  Connection: 1
+     0x17
+Node 0x07 [Audio Input] wcaps 0x1d0541: Stereo
+  Power: 0x0
+  Connection: 1
+     0x18
+Node 0x08 [Audio Output] wcaps 0x40211: Stereo Digital
+  PCM: rates 0x7e0, bits 0x0e, types 0x5
+Node 0x09 [Audio Input] wcaps 0x140311: Stereo Digital
+  PCM: rates 0x160, bits 0x0e, types 0x5
+  Connection: 1
+     0x11
+Node 0x0a [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x08173f: IN OUT HP
+  Pin Default 0x0101e022: [Jack] Line Out at Ext Rear
+    Conn = 1/8, Color = White
+  Pin-ctls: 0x40: OUT
+  Connection: 1
+     0x02
+Node 0x0b [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x081737: IN OUT
+  Pin Default 0x90afe112: [Fixed] Mic at Int N/A
+    Conn = Other, Color = White
+  Pin-ctls: 0x24: IN
+  Connection: 1
+     0x04
+Node 0x0c [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x081737: IN OUT
+  Pin Default 0x9017e121: [Fixed] Speaker at Int N/A
+    Conn = Analog, Color = White
+  Pin-ctls: 0x20: IN
+  Connection: 1
+     0x03
+Node 0x0d [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x08173f: IN OUT HP
+  Pin Default 0x4180e100: [N/A] Line In at Ext Rear
+    Conn = Unknown, Color = White
+  Pin-ctls: 0x40: OUT
+  Connection: 1
+     0x02
+Node 0x0e [Pin Complex] wcaps 0x400081: Stereo
+  Pincap 0x0824: IN
+  Pin Default 0x41f0e032: [N/A] Other at Ext Rear
+    Conn = Unknown, Color = White
+  Pin-ctls: 0x20: IN
+Node 0x0f [Pin Complex] wcaps 0x400181: Stereo
+  Pincap 0x0837: IN OUT
+  Pin Default 0x0181e031: [Jack] Line In at Ext Rear
+    Conn = 1/8, Color = White
+  Pin-ctls: 0x20: IN
+  Connection: 1
+     0x05
+Node 0x10 [Pin Complex] wcaps 0x400301: Stereo Digital
+  Pincap 0x0810: OUT
+  Pin Default 0x1145f023: [Jack] SPDIF Out at Int Rear
+    Conn = Optical, Color = Other
+  Pin-ctls: 0x40: OUT
+  Connection: 3
+     0x08* 0x17 0x19
+Node 0x11 [Pin Complex] wcaps 0x430681: Stereo Digital
+  Pincap 0x0810024: IN
+  Pin Default 0x11c5c032: [Jack] SPDIF In at Int Rear
+    Conn = Optical, Color = UNKNOWN
+  Pin-ctls: 0x20: IN
+  Power: 0x0
+Node 0x12 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x04, stepsize=0x27, mute=0
+  Amp-Out vals:  [0x02 0x02]
+  Connection: 7
+     0x0e 0x15 0x0f* 0x0b 0x0c 0x0d 0x0a
+Node 0x13 [Audio Selector] wcaps 0x30010d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x00, nsteps=0x04, stepsize=0x27, mute=0
+  Amp-Out vals:  [0x00 0x00]
+  Connection: 7
+     0x0e 0x15* 0x0f 0x0b 0x0c 0x0d 0x0a
+Node 0x14 [Beep Generator Widget] wcaps 0x70000c: Mono Amp-Out
+  Amp-Out caps: ofs=0x03, nsteps=0x03, stepsize=0x17, mute=0
+  Amp-Out vals:  [0x00]
+Node 0x15 [Pin Complex] wcaps 0x400001: Stereo
+  Pincap 0x0820: IN
+  Pin Default 0x4180e100: [N/A] Line In at Ext Rear
+    Conn = Unknown, Color = White
+  Pin-ctls: 0x00:
+Node 0x16 [Volume Knob Widget] wcaps 0x600000: Mono
+Node 0x17 [Audio Selector] wcaps 0x300903: Stereo Amp-In
+  Amp-In caps: N/A
+  Amp-In vals:  [0x80 0x80]
+  Connection: 1
+     0x12
+Node 0x18 [Audio Selector] wcaps 0x300903: Stereo Amp-In
+  Amp-In caps: N/A
+  Amp-In vals:  [0x80 0x80]
+  Connection: 1
+     0x13
+Node 0x19 [Vendor Defined Widget] wcaps 0xf30201: Stereo Digital
+Node 0x1a [Audio Output] wcaps 0x30201: Stereo Digital
+Node 0x1b [Pin Complex] wcaps 0x400301: Stereo Digital
+  Pincap 0x0810: OUT
+  Pin Default 0x4180e100: [N/A] Line In at Ext Rear
+    Conn = Unknown, Color = White
+  Pin-ctls: 0x00:
+  Connection: 1
+     0x1a
+

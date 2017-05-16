@@ -1,0 +1,121 @@
+Codec: Conexant CX20561 (Hermosa)
+Address: 0
+Vendor Id: 0x14f15051
+Subsystem Id: 0x103c30d9
+Revision Id: 0x100000
+Modem Function Group: 0x2
+Default PCM:
+    rates [0x160]: 44100 48000 96000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+Default Amp-In caps: N/A
+Default Amp-Out caps: N/A
+Node 0x10 [Audio Output] wcaps 0xc1d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x4a, nsteps=0x4a, stepsize=0x03, mute=0
+  Amp-Out vals:  [0x3b 0x3b]
+  PCM:
+    rates [0x560]: 44100 48000 96000 192000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+  Power: 0x0
+Node 0x11 [Audio Output] wcaps 0xc1d: Stereo Amp-Out
+  Amp-Out caps: ofs=0x4a, nsteps=0x4a, stepsize=0x03, mute=0
+  Amp-Out vals:  [0x4a 0x4a]
+  PCM:
+    rates [0x560]: 44100 48000 96000 192000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+  Power: 0x0
+Node 0x12 [Audio Output] wcaps 0x211: Stereo Digital
+  PCM:
+    rates [0x160]: 44100 48000 96000
+    bits [0xe]: 16 20 24
+    formats [0x5]: PCM AC3
+Node 0x13 [Beep Generator Widget] wcaps 0x70000c: Mono Amp-Out
+  Amp-Out caps: ofs=0x03, nsteps=0x03, stepsize=0x17, mute=0
+  Amp-Out vals:  [0x00]
+Node 0x14 [Audio Input] wcaps 0x100d1b: Stereo Amp-In
+  Amp-In caps: ofs=0x4a, nsteps=0x50, stepsize=0x03, mute=0
+  Amp-In vals:  [0x40 0x40] [0x44 0x44]
+  PCM:
+    rates [0x160]: 44100 48000 96000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+  Power: 0x0
+  Connection: 2
+     0x1d* 0x17
+Node 0x15 [Audio Input] wcaps 0x100d1b: Stereo Amp-In
+  Amp-In caps: ofs=0x4a, nsteps=0x50, stepsize=0x03, mute=0
+  Amp-In vals:  [0x40 0x40]
+  PCM:
+    rates [0x160]: 44100 48000 96000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+  Power: 0x0
+  Connection: 1
+     0x18
+Node 0x16 [Pin Complex] wcaps 0x400581: Stereo
+  Pincap 0x081c: OUT HP Detect
+  Pin Default 0x01214040: [Jack] HP Out at Ext Rear
+    Conn = 1/8, Color = Green
+  Pin-ctls: 0x40: OUT
+  Power: 0x0
+  Connection: 2
+     0x10* 0x11
+Node 0x17 [Pin Complex] wcaps 0x40048b: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x04, stepsize=0x27, mute=0
+  Amp-In vals: 
+  Pincap 0x081224: IN Detect
+  Pin Default 0x400001f0: [N/A] Line Out at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x20: IN
+  Power: 0x0
+Node 0x18 [Pin Complex] wcaps 0x40048b: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x04, stepsize=0x27, mute=0
+  Amp-In vals: 
+  Pincap 0x081224: IN Detect
+  Pin Default 0x01a19030: [Jack] Mic at Ext Rear
+    Conn = 1/8, Color = Pink
+  Pin-ctls: 0x24: IN
+  Power: 0x0
+Node 0x19 [Pin Complex] wcaps 0x400581: Stereo
+  Pincap 0x0814: OUT Detect
+  Pin Default 0x400001f0: [N/A] Line Out at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x40: OUT
+  Power: 0x0
+  Connection: 2
+     0x10* 0x11
+Node 0x1a [Pin Complex] wcaps 0x400501: Stereo
+  Pincap 0x0810010: OUT EAPD
+  Pin Default 0x92170110: [Fixed] Speaker at Int Front
+    Conn = Analog, Color = Unknown
+  Pin-ctls: 0x40: OUT
+  Power: 0x0
+  Connection: 2
+     0x10* 0x11
+Node 0x1b [Pin Complex] wcaps 0x400500: Mono
+  Pincap 0x0810010: OUT EAPD
+  Pin Default 0x400001f0: [N/A] Line Out at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x40: OUT
+  Power: 0x0
+  Connection: 2
+     0x10* 0x11
+Node 0x1c [Pin Complex] wcaps 0x400701: Stereo Digital
+  Pincap 0x0810: OUT
+  Pin Default 0x400001f0: [N/A] Line Out at Ext N/A
+    Conn = Unknown, Color = Unknown
+  Pin-ctls: 0x00:
+  Power: 0x0
+  Connection: 1
+     0x12
+Node 0x1d [Pin Complex] wcaps 0x40040b: Stereo Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x04, stepsize=0x27, mute=0
+  Amp-In vals: 
+  Pincap 0x0820: IN
+  Pin Default 0x97a70120: [Fixed] Mic at Int Riser
+    Conn = Analog, Color = Unknown
+  Pin-ctls: 0x00:
+  Power: 0x0
+Node 0x1e [Vendor Defined Widget] wcaps 0xf00000: Mono
