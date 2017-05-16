@@ -3,8 +3,6 @@ Complete instructions for AppleALC.kext
 
 AppleALC Intructions
 
-Redesign AppleHDA to its codec
-
 Before you start studying AppleHDA, you need to familiarize yourself with the concept of injecting layout.
 
 1. Extracting Linux - Dump
@@ -349,8 +347,6 @@ External Mic : 24-> 34-> 9 (0x18->0x22->0x09)
 * Download and install Graphviz: http://www.graphviz.org/Download_macos.php
 * Download and unpack to the desktop scripts: https://dl.dropbox.com/s/lqzc5pzo8nyh0j2/HD_Codec-convert.zip?dl=1
 
-Using the terminal, run the script Codec.txt_convert.sh, upon request of the script, drag your codec dump to the terminal window.
-
 A new folder is created on the desktop that contains the following files:
 * The original codec dump in hexadecimal form (hex)
 * Codec dump in decimal form (dec)
@@ -376,6 +372,16 @@ Example is slightly more difficult - Headphone output, codec VIA2021
 
 
 Here in the chain there is Audio Selector: 40 -> 27 -> 52 -> 11.
+
+Note 1.
+
+Using the terminal, run the script Codec.txt_convert.sh, upon request of the script, drag your codec dump to the terminal window.
+Run the script like:
+./Users/*you*/Desktop/HD_Codec-convert/Codec.txt_convert.sh
+
+The script wont work if you cd to the folder and run ./Codec.txt_convert.sh, it fails to find its dependancies.
+If you know how to fix this please let me know
+
 
 4. Making a minimum pin-config (for output to the speakers)
 To create a pin-config you will need the original Linux-dump (hex).
